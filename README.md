@@ -1,1 +1,33 @@
-# CSharFinal
+<h1>Airport Ticket Booking (foothill C# final task)<h1>
+<h2>Entities:</h2>
+<h3>Booking</h3>
+<ul>
+<li>Id</li>
+<li>Class</li>
+<li>Flight</li>
+<li>Seat</li>
+<li>BookingDate</li>
+<li>BookingPrice</li>
+</ul>
+<h3>Flight</h3>
+<ul>
+<li>DepartureAirport</li>
+<li>DepartureCountry</li>
+<li>Seats</li>
+<li>ArrivalCountry</li>
+<li>ArrivalAirport</li>
+<li>DepartureDateTime</li>
+<li>ArrivalDateTime</li>
+</ul>
+<h3>Person</h3>
+<ul>
+<li>FirstName</li>
+<li>LastName</li>
+<Li>BirthDate</li>
+<li>Address</li>
+<li>Nationality</li>
+</ul>
+<h3>Customer</he>
+<ul>
+<li>Booking</li>
+</ul>
