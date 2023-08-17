@@ -20,7 +20,7 @@ namespace Airport
                 if (input == 1)
                 {
                     SearchFlights searchFlights = new SearchFlights();
-                    searchFlights.SearchFlightMain(flights);
+                    searchFlights.SearchFlightMain(flights, bookings);
                     CustomerMain(flights, bookings);
 
                 }
