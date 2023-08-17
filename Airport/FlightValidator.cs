@@ -46,7 +46,7 @@ namespace Airport
             resultCode = 0;
             if (!FlightIdValidation(flight.Id, ref flights)) resultCode |= FlightStatus.IdReserved;
 
-            if (!SeatsValidation(flight.Seats.Count)) resultCode |= FlightStatus.NumberOfSeatsOutOfBound;
+            if (!SeatsValidation(flight.SeatsCount())) resultCode |= FlightStatus.NumberOfSeatsOutOfBound;
 
             if (!DepartureTimeValidation(flight.DepartureTime)) resultCode |= FlightStatus.DepartureDateError;
 
