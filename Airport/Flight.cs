@@ -63,7 +63,6 @@ namespace Airport
             int upperBound = avalibleSeats.Count;
 
             int randomInt = random.Next(lowerBound, upperBound);
-            Seats[avalibleSeats[randomInt]] = true;
             return avalibleSeats[randomInt];
         }
 
