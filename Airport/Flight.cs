@@ -15,7 +15,7 @@ namespace Airport
         public string ArrivalAirport { get; set; }
         public string DepartureCountry { get; set; }
         public string ArrivalCountry { get; set; }
-        private List<bool> Seats;
+        public List<bool> Seats;
         public DateTime DepartureTime { get; set; }
         public DateTime ArrivalTime { get; set; }
         public decimal StanderedPrice { get; set; }

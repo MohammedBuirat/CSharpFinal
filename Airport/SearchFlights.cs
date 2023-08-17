@@ -245,6 +245,7 @@ namespace Airport
             {
                 searched = searched.Where(flight => flight.ArrivalTime.Date == aDate).ToList();
             }
+            SearchOperations(searched);
         }
 
         public void SearchOperations(List<Flight> flights)

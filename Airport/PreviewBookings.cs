@@ -56,10 +56,12 @@ namespace Airport
                 else if (input == 1)
                 {
                     DeleteBooking(booking);
+                    break;
                 }
                 else if (input == 2)
                 {
                     ModifiyBooking(booking);
+                    break;
                 }
                 else
                 {

@@ -34,7 +34,7 @@ namespace Airport
 
         public string ReadFile()
         {
-            string filePath = "Flight.csv";
+            string filePath = "../../../Flight.csv";
 
             string fileContent = File.ReadAllText(filePath);
 
