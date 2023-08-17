@@ -17,15 +17,15 @@ namespace Airport
         public DateTime BookingTime { get; init; }
         public decimal BookingPrice { get; set; }
 
-        public Booking(FlightClass flightClass, Flight flight, int seat, DateTime bookingTime, decimal bookingPrice)
+        public Booking(FlightClass flightClass, Flight flight, int seat)
         {
             Id = num;
             num++;
             FlightClass = flightClass;
             Flight = flight;
             Seat = seat;
-            BookingTime = bookingTime;
-            BookingPrice = bookingPrice;
+            BookingTime = DateTime.Now;
+            SetPrice(flightClass);
         }
 
         public Booking(int id, Flight flight, FlightClass flightClass, int seat)
