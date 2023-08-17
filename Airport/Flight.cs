@@ -33,12 +33,18 @@ namespace Airport
             StanderedPrice = standeredPrice;
         }
 
-        public override string ToString()
+        public int NumberOfAvalibleSeats()
         {
             int avalibleSeats = Seats.Count(seat => !seat);
+            return avalibleSeats;
+        }
+
+        public override string ToString()
+        {
+            
             return $"Flight {Id}: {DepartureAirport} to {ArrivalAirport} " +
                    $"Departure Time: {DepartureTime}, Arrival Time: {ArrivalTime} " +
-                   $"Avalible Seats: {avalibleSeats}, Price: {StanderedPrice:C}";
+                   $"Avalible Seats: {NumberOfAvalibleSeats()}, Price: {StanderedPrice:C}";
         }
 
         public int BookRandomSeat()
