@@ -354,10 +354,10 @@ namespace Airport
                 .Select(group => new
                 {
                     Country = group.Key,
-                    LeastPriceTicket = group.OrderBy(flight => flight.StanderedPrice).FirstOrDefault()
+                    LeastPriceTicket = group.OrderBy(flight => flight.StanderedPrice).Where(flight => flight.NumberOfAvalibleSeats() != 0).FirstOrDefault()
                 })
                 .ToList();
-            foreach(var country in countriesWithLeastPriceTickets)
+            foreach (var country in countriesWithLeastPriceTickets)
             {
                 Console.WriteLine(country);
             }
