@@ -20,7 +20,8 @@ namespace Airport
         IdReserved = 1,
         DepartureDateError = 2,
         ArrivalDateError = 4,
-        NumberOfSeatsOutOfBound = 8,
-        FlightPriceOutOfBound = 16
+        NumberOfSeatsError = 8,
+        FlightPriceError = 16,
+        FlightAirportError = 32
     }
 }
