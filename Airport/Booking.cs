@@ -42,5 +42,12 @@ namespace Airport
         {
             return $"Booking id: {Id}  Flight: {Flight.ToString()}     Flight class: {FlightClass}    Booking price: {BookingPrice}   Seat num: {Seat}    Booking time: {BookingTime}";
         }
+
+        public void ChangeBookingClass(FlightClass newFlightClass)
+        {
+            if (FlightClass == newFlightClass) return;
+            FlightClass = newFlightClass;
+            SetBookingPrice();
+        }
     }
 }
