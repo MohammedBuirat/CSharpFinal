@@ -58,5 +58,11 @@ namespace Airport
             if (booking == null) return;
             else booking.ChangeBookingClass(flightClass);
         }
+
+        public void UpdateBooking(Booking oldBooking, Booking newBooking)
+        {
+            DeleteBooking(oldBooking.Id);
+            AddBooking(newBooking);
+        }
     }
 }
